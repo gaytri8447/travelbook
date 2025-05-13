@@ -3,2471 +3,595 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KEDARNATH TRAVEL — Powered by ASC-Ω | Developed by BITTU CHAUHAN</title>
-    <meta name="description" content="Experience divine Kedarnath Yatra with advanced tech-powered spiritual journey. Book your spiritual pilgrimage with us.">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmY2MwMCIgZD0iTTEyIDJMNCA3djEwbDggNWw4LTV2LTEwTDEyIDJ6TTEyIDRsMSAuNWwtMSAuNWwtMSAtLjVMMTIgNHptMCAxNUw2IDE1VjloNnY2aDZ2LTZoLTZ2Nkw2IDE1eiIvPjwvc3ZnPg==">
-    <meta name="theme-color" content="#0d0221">
-    
-    <!-- Web App Manifest -->
-    <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiS0VEQVJOQVRIIFRSQVZFTCIsInNob3J0X25hbWUiOiJLZWRhcm5hdGggWWF0cmEiLCJzdGFydF91cmwiOiIvIiwiZGlzcGxheSI6InN0YW5kYWxvbmUiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiIzBkMDIyMSIsInRoZW1lX2NvbG9yIjoiI2ZmY2MwMCIsImljb25zIjpbeyJzcmMiOiJpY29uLTUxMi5wbmciLCJzaXplcyI6IjUxMng1MTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn1dfQ==">
-    
-    <!-- SEO - JSON-LD Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "TravelAgency",
-      "name": "KEDARNATH TRAVEL — Powered by ASC-Ω",
-      "url": "https://kedarnath-travel.web.app",
-      "logo": "https://kedarnath-travel.web.app/logo.png",
-      "description": "Experience divine Kedarnath Yatra with advanced tech-powered spiritual journey.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Uttarakhand",
-        "addressRegion": "India"
-      },
-      "telephone": ["+917001196880", "+919007546886"],
-      "openingHours": "Mo-Su 08:00-20:00"
-    }
-    </script>
-    
-    <!-- TAILWIND CSS -->
+    <title>Gayatri's Personal Vault</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        cosmic: '#0d0221',
-                        sacred: '#ffcc00',
-                        snow: '#f9f9f9',
-                        neonBlue: '#23d6f7',
-                        saffron: '#f77525'
-                    },
-                    fontFamily: {
-                        cyber: ['Orbitron', 'sans-serif'],
-                        sanskrit: ['Poppins', 'sans-serif']
-                    }
-                }
-            }
-        }
-    </script>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #0d0221;
-            color: #f9f9f9;
-            overflow-x: hidden;
-        }
-        
-        /* Scrollbar Styles */
-        ::-webkit-scrollbar {
-            width: 8px;
-            height: 8px;
-        }
-        
-        ::-webkit-scrollbar-track {
-            background: #0d0221;
-        }
-        
-        ::-webkit-scrollbar-thumb {
-            background: #ffcc00;
-            border-radius: 4px;
-        }
-        
-        ::-webkit-scrollbar-thumb:hover {
-            background: #daa900;
-        }
-        
-        /* Loading Bar Animation */
-        @keyframes loadingAnimation {
-            0% {
-                width: 0%;
-            }
-            20% {
-                width: 20%;
-            }
-            50% {
-                width: 50%;
-            }
-            80% {
-                width: 80%;
-            }
-            100% {
-                width: 100%;
-            }
-        }
-        
-        /* Glow Animation */
-        @keyframes glow {
-            0% {
-                text-shadow: 0 0 10px rgba(255, 204, 0, 0.7), 0 0 20px rgba(255, 204, 0, 0.5);
-            }
-            50% {
-                text-shadow: 0 0 15px rgba(255, 204, 0, 0.9), 0 0 30px rgba(255, 204, 0, 0.7), 0 0 40px rgba(255, 204, 0, 0.5);
-            }
-            100% {
-                text-shadow: 0 0 10px rgba(255, 204, 0, 0.7), 0 0 20px rgba(255, 204, 0, 0.5);
-            }
-        }
-        
-        /* Floating Icon Animation */
-        @keyframes float {
-            0% {
-                transform: translateY(0px);
-            }
-            50% {
-                transform: translateY(-10px);
-            }
-            100% {
-                transform: translateY(0px);
-            }
-        }
-        
-        /* Divine Glow Animation */
-        @keyframes divineGlow {
-            0% {
-                box-shadow: 0 0 10px rgba(255, 204, 0, 0.7), 0 0 20px rgba(255, 204, 0, 0.5);
-            }
-            50% {
-                box-shadow: 0 0 20px rgba(255, 204, 0, 0.9), 0 0 40px rgba(255, 204, 0, 0.7), 0 0 60px rgba(255, 204, 0, 0.5);
-            }
-            100% {
-                box-shadow: 0 0 10px rgba(255, 204, 0, 0.7), 0 0 20px rgba(255, 204, 0, 0.5);
-            }
-        }
-        
-        /* Nav Blur Effect */
-        .nav-blur {
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-        }
-        
-        /* Logo Style */
-        .logo {
-            display: flex;
-            align-items: center;
-            font-family: 'Orbitron', sans-serif;
-            font-weight: 800;
-            color: #ffcc00;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            animation: glow 2s infinite;
-            cursor: pointer;
-        }
-        
-        /* Hero Section with Parallax */
-        .hero-section {
-            position: relative;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            background: linear-gradient(rgba(13, 2, 33, 0.8), rgba(13, 2, 33, 0.9)), url('https://images.unsplash.com/photo-1598091383679-e274d6d8bf8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            overflow: hidden;
-        }
-        
-        .hero-content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 20px;
-            z-index: 2;
-        }
-        
-        .hero-title {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 4rem;
-            font-weight: 800;
-            color: #ffcc00;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-            animation: glow 2s infinite;
-            line-height: 1.1;
-        }
-        
-        .hero-subtitle {
-            font-size: 1.2rem;
-            color: #f9f9f9;
-            margin-bottom: 2rem;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .cta-button {
-            background-color: #ffcc00;
-            color: #0d0221;
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 4px;
-            font-weight: 700;
-            font-size: 1rem;
-            text-transform: uppercase;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            display: inline-block;
-            text-decoration: none;
-            margin-top: 1rem;
-        }
-        
-        .cta-button:hover {
-            background-color: #daa900;
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        }
-        
-        /* Particle Effect */
-        .particles {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-        }
-        
-        .particle {
-            position: absolute;
-            background-color: rgba(255, 204, 0, 0.8);
-            border-radius: 50%;
-            animation: float 3s infinite ease-in-out;
-        }
-        
-        /* About Section */
-        .about-section {
-            background-color: #0d0221;
-            padding: 6rem 1.5rem;
-        }
-        
-        .about-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-        }
-        
-        .about-image {
-            position: relative;
-        }
-        
-        .about-image img {
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
-        }
-        
-        .about-glow {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 8px;
-            animation: divineGlow 3s infinite;
-        }
-        
-        .about-content h2 {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #ffcc00;
-            margin-bottom: 1.5rem;
-            text-transform: uppercase;
-        }
-        
-        .about-content p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            margin-bottom: 1.5rem;
-            color: #f9f9f9;
-        }
-        
-        .om-symbol {
-            display: inline-block;
-            margin-right: 10px;
-            color: #ffcc00;
-            font-size: 1.5rem;
-        }
-        
-        /* Packages Section */
-        .packages-section {
-            background: linear-gradient(rgba(13, 2, 33, 0.95), rgba(13, 2, 33, 0.95)), url('https://images.unsplash.com/photo-1626015134839-74c6baa7a3cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            padding: 6rem 1.5rem;
-        }
-        
-        .packages-header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-        
-        .packages-header h2 {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #ffcc00;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-        }
-        
-        .packages-header p {
-            font-size: 1.1rem;
-            max-width: 700px;
-            margin: 0 auto;
-            color: #f9f9f9;
-        }
-        
-        .packages-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .package-card {
-            background-color: rgba(13, 2, 33, 0.8);
-            border: 1px solid rgba(255, 204, 0, 0.3);
-            border-radius: 8px;
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .package-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 0 15px rgba(255, 204, 0, 0.5);
-        }
-        
-        .package-image {
-            height: 200px;
-            overflow: hidden;
-        }
-        
-        .package-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-        
-        .package-card:hover .package-image img {
-            transform: scale(1.1);
-        }
-        
-        .package-content {
-            padding: 1.5rem;
-        }
-        
-        .package-title {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #ffcc00;
-            margin-bottom: 0.5rem;
-        }
-        
-        .package-price {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: #23d6f7;
-            margin-bottom: 1rem;
-        }
-        
-        .package-description {
-            color: #f9f9f9;
-            margin-bottom: 1.5rem;
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-        
-        .package-features {
-            margin-bottom: 1.5rem;
-        }
-        
-        .package-feature {
-            display: flex;
-            align-items: center;
-            margin-bottom: 0.5rem;
-            color: #f9f9f9;
-            font-size: 0.9rem;
-        }
-        
-        .feature-icon {
-            color: #ffcc00;
-            margin-right: 0.5rem;
-            font-size: 1.2rem;
-        }
-        
-        .book-now-btn {
-            width: 100%;
-            background-color: #ffcc00;
-            color: #0d0221;
-            border: none;
-            border-radius: 4px;
-            padding: 0.75rem;
-            font-weight: 700;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        .book-now-btn:hover {
-            background-color: #daa900;
-        }
-        
-        /* Gallery Section */
-        .gallery-section {
-            background-color: #0d0221;
-            padding: 6rem 1.5rem;
-        }
-        
-        .gallery-header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-        
-        .gallery-header h2 {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #ffcc00;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-        }
-        
-        .gallery-header p {
-            font-size: 1.1rem;
-            max-width: 700px;
-            margin: 0 auto;
-            color: #f9f9f9;
-        }
-        
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 1.5rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .gallery-item {
-            position: relative;
-            height: 300px;
-            border-radius: 8px;
-            overflow: hidden;
-            cursor: pointer;
-        }
-        
-        .gallery-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-        
-        .gallery-item:hover .gallery-image {
-            transform: scale(1.1);
-        }
-        
-        .gallery-overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            padding: 1rem;
-            background: linear-gradient(transparent, rgba(13, 2, 33, 0.8));
-            color: #f9f9f9;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-        
-        .gallery-item:hover .gallery-overlay {
+        .file-item:hover .file-actions {
             opacity: 1;
         }
-        
-        .gallery-title {
-            font-size: 1.2rem;
-            font-weight: 700;
-            margin-bottom: 0.3rem;
-            color: #ffcc00;
+        .file-actions {
+            transition: opacity 0.2s ease;
         }
-        
-        .gallery-desc {
-            font-size: 0.9rem;
+        .gradient-bg {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
         }
-        
-        /* Virtual Tour Button */
-        .virtual-tour-container {
-            text-align: center;
-            margin-top: 3rem;
+        .blur-bg {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.8);
         }
-        
-        .virtual-tour-btn {
-            background-color: rgba(35, 214, 247, 0.2);
-            color: #23d6f7;
-            border: 1px solid #23d6f7;
-            padding: 0.75rem 1.5rem;
-            border-radius: 4px;
-            font-weight: 600;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            display: inline-flex;
-            align-items: center;
-        }
-        
-        .virtual-tour-btn:hover {
-            background-color: rgba(35, 214, 247, 0.3);
-            box-shadow: 0 0 15px rgba(35, 214, 247, 0.5);
-        }
-        
-        .vr-icon {
-            margin-right: 0.5rem;
-        }
-        
-        /* Virtual Tour Modal */
-        .virtual-tour {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(13, 2, 33, 0.95);
-        }
-        
-        .tour-content {
-            position: relative;
-            width: 90%;
-            height: 90%;
-            margin: 5% auto;
-            background-color: #0d0221;
-            border: 1px solid #ffcc00;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        
-        .tour-close {
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            color: #ffcc00;
-            font-size: 2rem;
-            cursor: pointer;
-            z-index: 1;
-        }
-        
-        /* Testimonials Section */
-        .testimonials-section {
-            background: linear-gradient(rgba(13, 2, 33, 0.95), rgba(13, 2, 33, 0.95)), url('https://images.unsplash.com/photo-1618240043386-0229c7d83218?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80');
-            background-size: cover;
-            background-position: center;
-            padding: 6rem 1.5rem;
-        }
-        
-        .testimonials-header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-        
-        .testimonials-header h2 {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #ffcc00;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-        }
-        
-        .testimonials-header p {
-            font-size: 1.1rem;
-            max-width: 700px;
-            margin: 0 auto;
-            color: #f9f9f9;
-        }
-        
-        .testimonials-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .testimonial-card {
-            background-color: rgba(13, 2, 33, 0.7);
-            border: 1px solid rgba(255, 204, 0, 0.3);
-            border-radius: 8px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            transition: transform 0.3s ease;
-        }
-        
-        .testimonial-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 0 10px rgba(255, 204, 0, 0.3);
-        }
-        
-        .testimonial-content {
-            position: relative;
-            font-size: 1.1rem;
-            line-height: 1.7;
-            color: #f9f9f9;
-            margin-bottom: 1.5rem;
-        }
-        
-        .testimonial-content::before {
-            content: """;
-            font-size: 4rem;
-            font-family: serif;
-            color: rgba(255, 204, 0, 0.3);
-            position: absolute;
-            top: -20px;
-            left: -10px;
-            z-index: -1;
-        }
-        
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-        }
-        
-        .author-avatar {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            margin-right: 1rem;
-            border: 2px solid #ffcc00;
-        }
-        
-        .author-info h4 {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: #ffcc00;
-            margin-bottom: 0.2rem;
-        }
-        
-        .author-info p {
-            font-size: 0.9rem;
-            color: #23d6f7;
-        }
-        
-        .testimonial-rating {
-            margin-top: 0.5rem;
-            color: #ffcc00;
-            font-size: 1.2rem;
-        }
-        
-        /* Booking Section */
-        .booking-section {
-            background-color: #0d0221;
-            padding: 6rem 1.5rem;
-        }
-        
-        .booking-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-        }
-        
-        .booking-form-container {
-            background-color: rgba(255, 255, 255, 0.05);
-            border-radius: 8px;
-            padding: 2rem;
-            border: 1px solid rgba(255, 204, 0, 0.3);
-        }
-        
-        .booking-header h2 {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 2rem;
-            font-weight: 700;
-            color: #ffcc00;
-            margin-bottom: 1.5rem;
-            text-transform: uppercase;
-        }
-        
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-        
-        .form-group label {
-            display: block;
-            font-size: 0.9rem;
-            margin-bottom: 0.5rem;
-            color: #f9f9f9;
-        }
-        
-        .form-control {
-            width: 100%;
-            padding: 0.75rem;
-            background-color: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 204, 0, 0.3);
-            border-radius: 4px;
-            color: #f9f9f9;
-            font-size: 1rem;
-            transition: border-color 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .form-control:focus {
-            outline: none;
-            border-color: #ffcc00;
-            box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
-        }
-        
-        .special-requests {
-            resize: vertical;
-            min-height: 100px;
-        }
-        
-        .submit-btn {
-            width: 100%;
-            background-color: #ffcc00;
-            color: #0d0221;
-            border: none;
-            border-radius: 4px;
-            padding: 0.75rem;
-            font-weight: 700;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-top: 1rem;
-        }
-        
-        .submit-btn:hover {
-            background-color: #daa900;
-        }
-        
-        .calculator-container {
-            position: relative;
-            background-color: rgba(255, 255, 255, 0.05);
-            border-radius: 8px;
-            padding: 2rem;
-            border: 1px solid rgba(255, 204, 0, 0.3);
-        }
-        
-        .calculator-header h2 {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 2rem;
-            font-weight: 700;
-            color: #ffcc00;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-        }
-        
-        .calculator-header p {
-            font-size: 1rem;
-            color: #f9f9f9;
-            margin-bottom: 1.5rem;
-        }
-        
-        .calculator {
-            width: 100%;
-            background-color: rgba(13, 2, 33, 0.8);
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-        }
-        
-        .calculator-screen {
-            width: 100%;
-            height: 80px;
-            background-color: rgba(0, 0, 0, 0.3);
-            color: #fff;
-            text-align: right;
-            font-size: 2.5rem;
-            font-family: 'Orbitron', sans-serif;
-            padding: 10px 20px;
-            border: none;
-        }
-        
-        .calculator-keys {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 1px;
-            background-color: rgba(0, 0, 0, 0.3);
-            padding: 10px;
-        }
-        
-        .calculator-key {
-            height: 60px;
-            background-color: rgba(255, 255, 255, 0.05);
-            border: none;
-            color: #fff;
-            font-size: 1.5rem;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        
-        .calculator-key:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-        
-        .calculator-key.operator {
-            background-color: rgba(255, 204, 0, 0.2);
-            color: #ffcc00;
-        }
-        
-        .calculator-key.equal {
-            background-color: #ffcc00;
-            color: #0d0221;
-            grid-column: span 2;
-        }
-        
-        /* Admin Panel */
-        .admin-panel {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .admin-login, .admin-dashboard {
-            background-color: #0d0221;
-            border: 1px solid rgba(255, 204, 0, 0.3);
-            border-radius: 8px;
-            padding: 2rem;
-            width: 100%;
-            max-width: 500px;
-        }
-        
-        .admin-dashboard {
-            display: none;
-            max-width: 800px;
-            overflow-y: auto;
-            max-height: 90vh;
-        }
-        
-        .admin-input {
-            width: 100%;
-            padding: 0.75rem;
-            background-color: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 204, 0, 0.3);
-            border-radius: 4px;
-            color: #f9f9f9;
-            font-size: 1rem;
-            margin-bottom: 1rem;
-        }
-        
-        .booking-card {
-            background-color: rgba(255, 255, 255, 0.05);
-            border-radius: 8px;
-            padding: 1rem;
-            margin-bottom: 1rem;
-            border: 1px solid rgba(255, 204, 0, 0.2);
-        }
-        
-        /* Contact Section */
-        .contact-section {
-            background: linear-gradient(rgba(13, 2, 33, 0.9), rgba(13, 2, 33, 0.9)), url('https://images.unsplash.com/photo-1600619644755-4dd94c35290f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80');
-            background-size: cover;
-            background-position: center;
-            padding: 6rem 1.5rem;
-        }
-        
-        .contact-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 3rem;
-        }
-        
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .contact-header h2 {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #ffcc00;
-            margin-bottom: 1.5rem;
-            text-transform: uppercase;
-        }
-        
-        .contact-details {
-            margin-bottom: 2rem;
-        }
-        
-        .contact-detail {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 1.5rem;
-        }
-        
-        .contact-icon {
-            font-size: 1.5rem;
-            color: #ffcc00;
-            margin-right: 1rem;
-        }
-        
-        .contact-text h4 {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: #f9f9f9;
-            margin-bottom: 0.3rem;
-        }
-        
-        .contact-text p, .contact-text a {
-            font-size: 1rem;
-            color: #f9f9f9;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        
-        .contact-text a:hover {
-            color: #ffcc00;
-        }
-        
-        .contact-form-container {
-            background-color: rgba(255, 255, 255, 0.05);
-            border-radius: 8px;
-            padding: 2rem;
-            border: 1px solid rgba(255, 204, 0, 0.3);
-        }
-        
-        .contact-form-header h3 {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: #ffcc00;
-            margin-bottom: 1.5rem;
-        }
-        
-        .social-media {
-            display: flex;
-            gap: 1rem;
-        }
-        
-        .social-link {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background-color: rgba(255, 204, 0, 0.2);
-            border-radius: 50%;
-            color: #ffcc00;
-            text-decoration: none;
+        .dropzone {
+            border: 2px dashed #c3cfe2;
             transition: all 0.3s ease;
         }
-        
-        .social-link:hover {
-            background-color: #ffcc00;
-            color: #0d0221;
-            transform: translateY(-3px);
-        }
-        
-        /* Footer */
-        .footer {
-            background-color: #080110;
-            padding: 4rem 1.5rem 2rem;
-            border-top: 1px solid rgba(255, 204, 0, 0.3);
-        }
-        
-        .footer-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 3rem;
-            margin-bottom: 3rem;
-        }
-        
-        .footer-logo {
-            font-family: 'Orbitron', sans-serif;
-            font-weight: 800;
-            font-size: 1.8rem;
-            color: #ffcc00;
-            margin-bottom: 1rem;
-            display: inline-block;
-        }
-        
-        .footer-about p {
-            font-size: 0.95rem;
-            color: #f9f9f9;
-            margin-bottom: 1.5rem;
-            line-height: 1.6;
-        }
-        
-        .footer-heading {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: #ffcc00;
-            margin-bottom: 1.5rem;
-            text-transform: uppercase;
-        }
-        
-        .footer-links {
-            list-style: none;
-        }
-        
-        .footer-link {
-            margin-bottom: 0.8rem;
-        }
-        
-        .footer-link a {
-            color: #f9f9f9;
-            text-decoration: none;
-            font-size: 0.95rem;
-            transition: color 0.3s ease;
-            display: flex;
-            align-items: center;
-        }
-        
-        .footer-link a:hover {
-            color: #ffcc00;
-        }
-        
-        .footer-link-icon {
-            margin-right: 0.5rem;
-            font-size: 0.8rem;
-        }
-        
-        .newsletter-form {
-            display: flex;
-            margin-bottom: 1.5rem;
-        }
-        
-        .newsletter-input {
-            flex: 1;
-            padding: 0.75rem;
-            background-color: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 204, 0, 0.3);
-            border-right: none;
-            border-radius: 4px 0 0 4px;
-            color: #f9f9f9;
-            font-size: 0.9rem;
-        }
-        
-        .newsletter-btn {
-            background-color: #ffcc00;
-            color: #0d0221;
-            border: none;
-            border-radius: 0 4px 4px 0;
-            padding: 0 1rem;
-            font-weight: 700;
-            font-size: 0.9rem;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        
-        .newsletter-btn:hover {
-            background-color: #daa900;
-        }
-        
-        .footer-bottom {
-            text-align: center;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        .footer-bottom-text {
-            font-size: 0.9rem;
-            color: #f9f9f9;
-        }
-        
-        .footer-bottom-text a {
-            color: #ffcc00;
-            text-decoration: none;
-        }
-        
-        /* Loading Screen */
-        .loading-screen {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #0d0221;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-            transition: opacity 0.5s ease;
-        }
-        
-        .loading-logo {
-            font-family: 'Orbitron', sans-serif;
-            font-weight: 800;
-            font-size: 2rem;
-            color: #ffcc00;
-            margin-bottom: 2rem;
-            text-transform: uppercase;
-            animation: glow 2s infinite;
-        }
-        
-        .loading-bar-container {
-            width: 300px;
-            height: 10px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 5px;
-            overflow: hidden;
-        }
-        
-        .loading-bar {
-            height: 100%;
-            background-color: #ffcc00;
-            animation: loadingAnimation 2s ease-in-out forwards;
-        }
-        
-        .loading-text {
-            margin-top: 1rem;
-            color: #f9f9f9;
-            font-size: 0.9rem;
-        }
-        
-        /* Mobile Navigation */
-        .mobile-menu-button {
-            display: none;
-        }
-        
-        .mobile-menu {
-            display: none;
-        }
-        
-        /* Responsive Styles */
-        @media (max-width: 1024px) {
-            .hero-title {
-                font-size: 3.5rem;
-            }
-            
-            .about-container {
-                grid-template-columns: 1fr;
-            }
-            
-            .about-image {
-                order: -1;
-            }
-            
-            .booking-container {
-                grid-template-columns: 1fr;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .desktop-nav {
-                display: none;
-            }
-            
-            .mobile-menu-button {
-                display: block;
-                background: none;
-                border: none;
-                color: #ffcc00;
-                font-size: 1.5rem;
-                cursor: pointer;
-            }
-            
-            .mobile-menu {
-                display: block;
-                position: fixed;
-                top: 0;
-                right: -100%;
-                width: 80%;
-                height: 100%;
-                background-color: #0d0221;
-                border-left: 1px solid rgba(255, 204, 0, 0.3);
-                padding: 2rem;
-                transition: right 0.3s ease;
-                z-index: 100;
-                overflow-y: auto;
-            }
-            
-            .mobile-menu.active {
-                right: 0;
-            }
-            
-            .mobile-menu-header {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin-bottom: 2rem;
-            }
-            
-            .mobile-menu-close {
-                background: none;
-                border: none;
-                color: #ffcc00;
-                font-size: 1.5rem;
-                cursor: pointer;
-            }
-            
-            .mobile-nav {
-                display: flex;
-                flex-direction: column;
-                gap: 1rem;
-            }
-            
-            .mobile-link {
-                color: #f9f9f9;
-                text-decoration: none;
-                font-size: 1.1rem;
-                padding: 0.5rem 0;
-                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-                transition: color 0.3s ease;
-            }
-            
-            .mobile-link:hover {
-                color: #ffcc00;
-            }
-            
-            .hero-title {
-                font-size: 3rem;
-            }
-            
-            .contact-container {
-                grid-template-columns: 1fr;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .hero-title {
-                font-size: 2.5rem;
-            }
-            
-            .packages-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .gallery-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .footer-grid {
-                grid-template-columns: 1fr;
-            }
+        .dropzone.active {
+            border-color: #6366f1;
+            background-color: #eef2ff;
         }
     </style>
 </head>
-<body>
-    <!-- Loading Screen -->
-    <div class="loading-screen" id="loading-screen">
-        <div class="loading-logo">KEDARNATH TRAVEL</div>
-        <div class="loading-bar-container">
-            <div class="loading-bar" id="progress-bar"></div>
-        </div>
-        <div class="loading-text">Loading Divine Experience...</div>
-    </div>
-    
-    <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-50 nav-blur bg-cosmic/80 border-b border-sacred/30">
-        <div class="max-w-7xl mx-auto px-4 md:px-6 py-4">
-            <div class="flex justify-between items-center">
-                <a href="#" class="logo">
-                    <svg class="w-6 h-6 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffcc00">
-                        <path d="M12 2L4 7v10l8 5 8-5V7l-8-5zm0 2l6 3v8l-6 3-6-3V7l6-3zm0 3c-1.1 0-2 .9-2 2 0 .7.4 1.3 1 1.7V14h2v-3.3c.6-.4 1-1 1-1.7 0-1.1-.9-2-2-2z"/>
-                    </svg>
-                    KEDARNATH TRAVEL
-                </a>
-                
-                <div class="flex items-center">
-                    <!-- Desktop Navigation -->
-                    <div class="hidden md:flex space-x-8 desktop-nav">
-                        <a href="#home" class="text-snow hover:text-sacred transition-colors">Home</a>
-                        <a href="#about" class="text-snow hover:text-sacred transition-colors">About</a>
-                        <a href="#packages" class="text-snow hover:text-sacred transition-colors">Packages</a>
-                        <a href="#gallery" class="text-snow hover:text-sacred transition-colors">Gallery</a>
-                        <a href="#booking" class="text-snow hover:text-sacred transition-colors">Book Now</a>
-                        <a href="#contact" class="text-snow hover:text-sacred transition-colors">Contact</a>
-                    </div>
-                    
-                    <!-- Mobile Menu Button -->
-                    <button class="mobile-menu-button" id="menu-toggle">
-                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="3" y1="12" x2="21" y2="12"></line>
-                            <line x1="3" y1="6" x2="21" y2="6"></line>
-                            <line x1="3" y1="18" x2="21" y2="18"></line>
-                        </svg>
-                    </button>
-                </div>
+<body class="gradient-bg min-h-screen font-sans">
+    <!-- Login Modal (shown by default) -->
+    <div id="loginModal" class="fixed inset-0 flex items-center justify-center z-50">
+        <div class="blur-bg rounded-xl shadow-2xl p-8 w-full max-w-md">
+            <div class="text-center mb-8">
+                <i class="fas fa-lock text-5xl text-indigo-600 mb-4"></i>
+                <h1 class="text-3xl font-bold text-gray-800">Gayatri's Vault</h1>
+                <p class="text-gray-600 mt-2">Your personal secure storage</p>
             </div>
-        </div>
-    </nav>
-    
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobile-menu">
-        <div class="mobile-menu-header">
-            <div class="logo">
-                <svg class="w-6 h-6 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffcc00">
-                    <path d="M12 2L4 7v10l8 5 8-5V7l-8-5zm0 2l6 3v8l-6 3-6-3V7l6-3zm0 3c-1.1 0-2 .9-2 2 0 .7.4 1.3 1 1.7V14h2v-3.3c.6-.4 1-1 1-1.7 0-1.1-.9-2-2-2z"/>
-                </svg>
-                KEDARNATH
-            </div>
-            <button class="mobile-menu-close" id="menu-close">
-                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="18" y1="6" x2="6" y2="18"></line>
-                    <line x1="6" y1="6" x2="18" y2="18"></line>
-                </svg>
-            </button>
-        </div>
-        <div class="mobile-nav">
-            <a href="#home" class="mobile-link">Home</a>
-            <a href="#about" class="mobile-link">About</a>
-            <a href="#packages" class="mobile-link">Packages</a>
-            <a href="#gallery" class="mobile-link">Gallery</a>
-            <a href="#booking" class="mobile-link">Book Now</a>
-            <a href="#contact" class="mobile-link">Contact</a>
-        </div>
-    </div>
-    
-    <!-- Hero Section -->
-    <section class="hero-section" id="home">
-        <div class="particles" id="particles"></div>
-        <div class="hero-content">
-            <h1 class="hero-title">KEDARNATH DIVINE YATRA</h1>
-            <p class="hero-subtitle">Experience the sacred journey to Kedarnath with our tech-powered spiritual travel packages designed for divine connection and comfort.</p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="#packages" class="cta-button">
-                    View Packages
-                </a>
-                <a href="#booking" class="cta-button bg-transparent border-2 border-sacred text-sacred hover:bg-sacred hover:text-cosmic">
-                    Book Now
-                </a>
-            </div>
-        </div>
-    </section>
-    
-    <!-- About Section -->
-    <section class="about-section" id="about">
-        <div class="about-container">
-            <div class="about-content">
-                <h2>ABOUT KEDARNATH YATRA</h2>
-                <p>Kedarnath, one of the holiest Hindu temples dedicated to Lord Shiva, is nestled in the majestic Himalayan ranges at an altitude of 3,583 meters. Our tech-enhanced spiritual journeys combine traditional pilgrimage with modern comfort.</p>
-                <p><span class="om-symbol">ॐ</span> We provide special arrangements for darshan, accommodation, and transportation, ensuring your spiritual journey is hassle-free and deeply fulfilling.</p>
-                <p><span class="om-symbol">ॐ</span> Our experienced guides are well-versed in the religious significance, mythology, and history of Kedarnath, enriching your pilgrimage experience.</p>
-                <p><span class="om-symbol">ॐ</span> With advanced weather monitoring and satellite communication, we ensure your safety throughout the challenging terrain and unpredictable mountain weather.</p>
-            </div>
-            <div class="about-image">
-                <img src="https://images.unsplash.com/photo-1589482512262-8e3e0709a2c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80" alt="Kedarnath Temple">
-                <div class="about-glow"></div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Packages Section -->
-    <section class="packages-section" id="packages">
-        <div class="packages-header">
-            <h2>OUR DIVINE PACKAGES</h2>
-            <p>Choose from our carefully curated spiritual journey packages designed to cater to different needs and preferences.</p>
-        </div>
-        <div class="packages-grid">
-            <!-- Package 1 -->
-            <div class="package-card">
-                <div class="package-image">
-                    <img src="https://images.unsplash.com/photo-1619837374214-f5b9eb80876d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1972&q=80" alt="Basic Package">
+            <form id="loginForm" class="space-y-6">
+                <div>
+                    <label for="username" class="block text-sm font-medium text-gray-700 mb-1">Username</label>
+                    <input type="text" id="username" required 
+                        class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
                 </div>
-                <div class="package-content">
-                    <h3 class="package-title">SACRED DARSHAN</h3>
-                    <div class="package-price">₹19,500</div>
-                    <p class="package-description">A 3-day essential package covering the basic spiritual journey to Kedarnath with comfortable accommodations.</p>
-                    <div class="package-features">
-                        <div class="package-feature">
-                            <span class="feature-icon">✓</span>
-                            <span>3 Days / 2 Nights</span>
-                        </div>
-                        <div class="package-feature">
-                            <span class="feature-icon">✓</span>
-                            <span>Helicopter Option Available</span>
-                        </div>
-                        <div class="package-feature">
-                            <span class="feature-icon">✓</span>
-                            <span>Guided Temple Visit</span>
-                        </div>
-                        <div class="package-feature">
-                            <span class="feature-icon">✓</span>
-                            <span>Standard Accommodations</span>
-                        </div>
-                    </div>
-                    <button class="book-now-btn" data-package="Sacred Darshan">BOOK NOW</button>
+                <div>
+                    <label for="password" class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+                    <input type="password" id="password" required 
+                        class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
                 </div>
-            </div>
-            
-            <!-- Package 2 -->
-            <div class="package-card">
-                <div class="package-image">
-                    <img src="https://images.unsplash.com/photo-1600111636485-c51587eb2e21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80" alt="Premium Package">
-                </div>
-                <div class="package-content">
-                    <h3 class="package-title">DIVINE JOURNEY</h3>
-                    <div class="package-price">₹32,500</div>
-                    <p class="package-description">A 5-day comprehensive package offering a deeper spiritual experience with premium services and additional holy sites.</p>
-                    <div class="package-features">
-                        <div class="package-feature">
-                            <span class="feature-icon">✓</span>
-                            <span>5 Days / 4 Nights</span>
-                        </div>
-                        <div class="package-feature">
-                            <span class="feature-icon">✓</span>
-                            <span>Premium Accommodation</span>
-                        </div>
-                        <div class="package-feature">
-                            <span class="feature-icon">✓</span>
-                            <span>Special Puja Arrangement</span>
-                        </div>
-                        <div class="package-feature">
-                            <span class="feature-icon">✓</span>
-                            <span>Visit to Nearby Holy Sites</span>
-                        </div>
-                    </div>
-                    <button class="book-now-btn" data-package="Divine Journey">BOOK NOW</button>
-                </div>
-            </div>
-            
-            <!-- Package 3 -->
-            <div class="package-card">
-                <div class="package-image">
-                    <img src="https://images.unsplash.com/photo-1626873560713-ab9c6abe6e52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80" alt="Luxury Package">
-                </div>
-                <div class="package-content">
-                    <h3 class="package-title">CELESTIAL EXPEDITION</h3>
-                    <div class="package-price">₹58,000</div>
-                    <p class="package-description">An exclusive 7-day luxury package with helicopter transfers, VIP darshan, and a complete Char Dham experience.</p>
-                    <div class="package-features">
-                        <div class="package-feature">
-                            <span class="feature-icon">✓</span>
-                            <span>7 Days / 6 Nights</span>
-                        </div>
-                        <div class="package-feature">
-                            <span class="feature-icon">✓</span>
-                            <span>Helicopter Transfers</span>
-                        </div>
-                        <div class="package-feature">
-                            <span class="feature-icon">✓</span>
-                            <span>VIP Darshan Access</span>
-                        </div>
-                        <div class="package-feature">
-                            <span class="feature-icon">✓</span>
-                            <span>Luxury Accommodation</span>
-                        </div>
-                    </div>
-                    <button class="book-now-btn" data-package="Celestial Expedition">BOOK NOW</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Gallery Section -->
-    <section class="gallery-section" id="gallery">
-        <div class="gallery-header">
-            <h2>DIVINE GLIMPSES</h2>
-            <p>Experience the spiritual aura and breathtaking views through our curated gallery.</p>
-        </div>
-        <div class="gallery-grid">
-            <!-- Gallery Item 1 -->
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1589308154044-c48cee66a7eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Kedarnath Temple" class="gallery-image">
-                <div class="gallery-overlay">
-                    <h3 class="gallery-title">Kedarnath Temple</h3>
-                    <p class="gallery-desc">The magnificent ancient temple dedicated to Lord Shiva.</p>
-                </div>
-            </div>
-            
-            <!-- Gallery Item 2 -->
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1589464170097-acd6d56254e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80" alt="Himalayan Peaks" class="gallery-image">
-                <div class="gallery-overlay">
-                    <h3 class="gallery-title">Himalayan Peaks</h3>
-                    <p class="gallery-desc">Majestic snow-capped mountains surrounding the holy shrine.</p>
-                </div>
-            </div>
-            
-            <!-- Gallery Item 3 -->
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1615830237128-8060f0de7187?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Pilgrimage Path" class="gallery-image">
-                <div class="gallery-overlay">
-                    <h3 class="gallery-title">Pilgrimage Path</h3>
-                    <p class="gallery-desc">The sacred 16km trek path to Kedarnath.</p>
-                </div>
-            </div>
-            
-            <!-- Gallery Item 4 -->
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1533258439784-28006397342d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80" alt="Morning Aarti" class="gallery-image">
-                <div class="gallery-overlay">
-                    <h3 class="gallery-title">Morning Aarti</h3>
-                    <p class="gallery-desc">Divine ritual performed at dawn with bells and chants.</p>
-                </div>
-            </div>
-            
-            <!-- Gallery Item 5 -->
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1593351415075-3bac9f45c877?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80" alt="Helicopter Service" class="gallery-image">
-                <div class="gallery-overlay">
-                    <h3 class="gallery-title">Helicopter Service</h3>
-                    <p class="gallery-desc">Aerial view during the helicopter journey to Kedarnath.</p>
-                </div>
-            </div>
-            
-            <!-- Gallery Item 6 -->
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1589827577276-3cd7f6d66ad3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Sacred Puja" class="gallery-image">
-                <div class="gallery-overlay">
-                    <h3 class="gallery-title">Sacred Puja</h3>
-                    <p class="gallery-desc">Traditional rituals performed by priests at the temple.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="virtual-tour-container">
-            <button class="virtual-tour-btn" id="virtual-tour-btn">
-                <span class="vr-icon">
-                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                </span>
-                EXPERIENCE VIRTUAL TOUR
-            </button>
-        </div>
-    </section>
-    
-    <!-- Testimonials Section -->
-    <section class="testimonials-section" id="testimonials">
-        <div class="testimonials-header">
-            <h2>PILGRIM EXPERIENCES</h2>
-            <p>Read about the transformative journeys of our pilgrims who embarked on the divine Kedarnath Yatra.</p>
-        </div>
-        <div class="testimonials-container">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Testimonial 1 -->
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        "The Kedarnath journey organized by ASC-Ω was truly magical. From the helicopter ride offering breathtaking views to the special puja arrangement, everything was meticulously planned. The tech-enabled weather updates and guide's knowledge made the pilgrimage both spiritual and educational."
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rajesh Sharma" class="author-avatar">
-                        <div class="author-info">
-                            <h4>Rajesh Sharma</h4>
-                            <p>Delhi, India</p>
-                            <div class="testimonial-rating">★★★★★</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 2 -->
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        "As senior citizens, we were initially apprehensive about the Kedarnath trek. But the team arranged everything perfectly - from comfortable accommodations to pony rides for the steep paths. The satellite phones they provided gave us peace of mind. A spiritually fulfilling experience!"
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sumitra Devi" class="author-avatar">
-                        <div class="author-info">
-                            <h4>Sumitra Devi</h4>
-                            <p>Ahmedabad, India</p>
-                            <div class="testimonial-rating">★★★★★</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 3 -->
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        "I opted for the Celestial Expedition package and it exceeded all expectations. The helicopter service saved time, accommodations were luxury alpine tents, and the VIP darshan was a blessing. Their digital tracking system kept my family informed about my whereabouts throughout the journey."
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="https://randomuser.me/api/portraits/men/62.jpg" alt="Vikram Mehta" class="author-avatar">
-                        <div class="author-info">
-                            <h4>Vikram Mehta</h4>
-                            <p>Mumbai, India</p>
-                            <div class="testimonial-rating">★★★★★</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 4 -->
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        "The Divine Journey package was perfect for our family of four. The guides were knowledgeable about the history and mythology of Kedarnath. The special meditation session arranged near the temple was serene. The emergency medical support system gave us confidence during the high-altitude journey."
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Priya Iyer" class="author-avatar">
-                        <div class="author-info">
-                            <h4>Priya Iyer</h4>
-                            <p>Bengaluru, India</p>
-                            <div class="testimonial-rating">★★★★★</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Booking Section -->
-    <section class="booking-section" id="booking">
-        <div class="booking-container">
-            <div class="booking-form-container">
-                <div class="booking-header">
-                    <h2>BOOK YOUR SPIRITUAL JOURNEY</h2>
-                </div>
-                <form id="booking-form">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="package">Select Package</label>
-                        <select id="package" class="form-control" required>
-                            <option value="">-- Select a Package --</option>
-                            <option value="Sacred Darshan">Sacred Darshan - ₹19,500</option>
-                            <option value="Divine Journey">Divine Journey - ₹32,500</option>
-                            <option value="Celestial Expedition">Celestial Expedition - ₹58,000</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="date">Preferred Date</label>
-                        <input type="date" id="date" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="persons">Number of Persons</label>
-                        <input type="number" id="persons" class="form-control" min="1" max="15" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="special-requests">Special Requests (Optional)</label>
-                        <textarea id="special-requests" class="form-control special-requests"></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">
-                        BOOK NOW
-                    </button>
-                </form>
-            </div>
-            
-            <div class="calculator-container">
-                <div class="calculator-header">
-                    <h2>YATRA CALCULATOR</h2>
-                    <p>Calculate estimated costs for your journey based on package and number of people.</p>
-                </div>
-                <div class="calculator">
-                    <input type="text" class="calculator-screen" id="calc-screen" disabled>
-                    <div class="calculator-keys">
-                        <button class="calculator-key">7</button>
-                        <button class="calculator-key">8</button>
-                        <button class="calculator-key">9</button>
-                        <button class="calculator-key operator">÷</button>
-                        <button class="calculator-key">4</button>
-                        <button class="calculator-key">5</button>
-                        <button class="calculator-key">6</button>
-                        <button class="calculator-key operator">×</button>
-                        <button class="calculator-key">1</button>
-                        <button class="calculator-key">2</button>
-                        <button class="calculator-key">3</button>
-                        <button class="calculator-key operator">-</button>
-                        <button class="calculator-key">0</button>
-                        <button class="calculator-key">.</button>
-                        <button class="calculator-key operator">+</button>
-                        <button class="calculator-key equal">=</button>
-                        <button class="calculator-key" id="admin-login-btn" style="grid-column: span 4; display: none;">ADMIN LOGIN</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Admin Panel -->
-    <div class="admin-panel fixed inset-0 z-50 bg-cosmic/95 flex items-center justify-center hidden">
-        <div class="admin-login">
-            <div class="flex justify-between mb-4">
-                <h3 class="text-sacred font-cyber">ADMIN LOGIN</h3>
-                <button class="admin-close text-sacred hover:text-neonBlue">
-                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="18" y1="6" x2="6" y2="18"></line>
-                        <line x1="6" y1="6" x2="18" y2="18"></line>
-                    </svg>
+                <button type="submit" 
+                    class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-lg transition duration-200 flex items-center justify-center">
+                    <i class="fas fa-sign-in-alt mr-2"></i> Unlock Vault
                 </button>
-            </div>
-            <input type="text" class="admin-input" placeholder="Username" id="admin-username">
-            <input type="password" class="admin-input" placeholder="Password" id="admin-password">
-            <button class="w-full mt-6 py-3 bg-sacred hover:bg-sacred/80 text-cosmic font-bold rounded-md transition-colors" id="admin-login-submit">LOGIN</button>
-        </div>
-        
-        <div class="admin-dashboard">
-            <div class="dashboard-header flex justify-between">
-                <h3 class="text-2xl font-cyber text-sacred">ADMIN DASHBOARD</h3>
-                <button class="admin-logout text-sacred hover:text-neonBlue">
-                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
-                        <polyline points="16 17 21 12 16 7"></polyline>
-                        <line x1="21" y1="12" x2="9" y2="12"></line>
-                    </svg>
-                </button>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-                <div class="bg-cosmic p-4 rounded-lg border border-sacred/30">
-                    <h4 class="text-sacred font-cyber mb-2">TOTAL BOOKINGS</h4>
-                    <p class="text-3xl font-bold text-neonBlue">247</p>
-                </div>
-                <div class="bg-cosmic p-4 rounded-lg border border-sacred/30">
-                    <h4 class="text-sacred font-cyber mb-2">REVENUE</h4>
-                    <p class="text-3xl font-bold text-neonBlue">₹45.2L</p>
-                </div>
-                <div class="bg-cosmic p-4 rounded-lg border border-sacred/30">
-                    <h4 class="text-sacred font-cyber mb-2">UPCOMING TRIPS</h4>
-                    <p class="text-3xl font-bold text-neonBlue">12</p>
-                </div>
-            </div>
-            <h4 class="text-xl font-cyber text-sacred mb-4">RECENT BOOKINGS</h4>
-            <div class="space-y-4 max-h-96 overflow-y-auto pr-2" id="bookings-container">
-                <!-- Bookings will be loaded here from the database -->
-                <div class="text-center py-4 text-neonBlue">Loading bookings...</div>
+            </form>
+            <div class="mt-6 text-center text-sm text-gray-500">
+                <i class="fas fa-shield-alt mr-1"></i> Your data is encrypted and secure
             </div>
         </div>
     </div>
 
-    <!-- Virtual Tour Modal -->
-    <div class="virtual-tour" id="virtual-tour-modal">
-        <div class="tour-content">
-            <span class="tour-close" id="tour-close">&times;</span>
-            <iframe id="tour-iframe" width="100%" height="100%" src="about:blank" frameborder="0" allowfullscreen></iframe>
+    <!-- Main App (hidden until login) -->
+    <div id="app" class="hidden container mx-auto px-4 py-8">
+        <!-- Header -->
+        <header class="flex justify-between items-center mb-8">
+            <div class="flex items-center">
+                <i class="fas fa-lock text-3xl text-indigo-600 mr-3"></i>
+                <h1 class="text-2xl font-bold text-gray-800">Welcome, Gayatri</h1>
+            </div>
+            <button id="logoutBtn" class="flex items-center text-gray-600 hover:text-indigo-600 transition">
+                <i class="fas fa-sign-out-alt mr-1"></i> Logout
+            </button>
+        </header>
+
+        <!-- Dashboard -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <!-- Storage Stats -->
+            <div class="bg-white rounded-xl shadow-md p-6">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h3 class="text-lg font-medium text-gray-700">Storage Used</h3>
+                        <p class="text-2xl font-bold text-indigo-600"><span id="storageUsed">0</span> <span class="text-sm text-gray-500">/ ∞ (Unlimited)</span></p>
+                    </div>
+                    <i class="fas fa-database text-3xl text-indigo-200"></i>
+                </div>
+                <div class="mt-4 w-full bg-gray-200 rounded-full h-2.5">
+                    <div class="bg-indigo-600 h-2.5 rounded-full" style="width: 0%"></div>
+                </div>
+            </div>
+
+            <!-- Quick Upload -->
+            <div class="bg-white rounded-xl shadow-md p-6">
+                <h3 class="text-lg font-medium text-gray-700 mb-4">Quick Upload</h3>
+                <div class="flex flex-col space-y-3">
+                    <button id="uploadBtn" class="flex items-center justify-center px-4 py-2 bg-indigo-50 text-indigo-600 rounded-lg hover:bg-indigo-100 transition">
+                        <i class="fas fa-cloud-upload-alt mr-2"></i> Upload Files
+                    </button>
+                    <input type="file" id="fileInput" class="hidden" multiple>
+                </div>
+            </div>
+
+            <!-- Security Status -->
+            <div class="bg-white rounded-xl shadow-md p-6">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h3 class="text-lg font-medium text-gray-700">Security Status</h3>
+                        <p class="text-green-600 font-medium"><i class="fas fa-check-circle mr-1"></i> All Secure</p>
+                    </div>
+                    <i class="fas fa-shield-alt text-3xl text-green-200"></i>
+                </div>
+                <div class="mt-4 text-sm text-gray-600">
+                    <p><i class="fas fa-lock mr-1"></i> End-to-end encryption</p>
+                    <p class="mt-1"><i class="fas fa-clock mr-1"></i> Last backup: Today</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Files Section -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+            <div class="border-b border-gray-200 px-6 py-4 flex justify-between items-center">
+                <h2 class="text-xl font-semibold text-gray-800">Your Files</h2>
+                <div class="flex space-x-2">
+                    <button id="sortByNameBtn" class="p-2 text-gray-500 hover:text-indigo-600 rounded-full hover:bg-indigo-50 transition">
+                        <i class="fas fa-sort-alpha-down"></i>
+                    </button>
+                    <button id="sortByDateBtn" class="p-2 text-gray-500 hover:text-indigo-600 rounded-full hover:bg-indigo-50 transition">
+                        <i class="fas fa-calendar-alt"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="divide-y divide-gray-200">
+                <!-- File items will be added here dynamically -->
+                <div id="fileList" class="divide-y divide-gray-200">
+                    <!-- Files will be added here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Upload Modal -->
+        <div id="uploadModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+            <div class="bg-white rounded-xl shadow-2xl p-6 w-full max-w-md">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-xl font-bold text-gray-800">Upload Files</h3>
+                    <button id="closeUploadModal" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div id="dropzone" class="dropzone rounded-lg p-8 text-center mb-4">
+                    <i class="fas fa-cloud-upload-alt text-4xl text-indigo-500 mb-3"></i>
+                    <p class="text-gray-600 mb-2">Drag & drop files here or click to browse</p>
+                    <button id="browseFilesBtn" class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition">
+                        Select Files
+                    </button>
+                </div>
+                <div id="selectedFiles" class="max-h-40 overflow-y-auto mb-4 hidden">
+                    <h4 class="text-sm font-medium text-gray-700 mb-2">Selected Files:</h4>
+                    <ul id="filePreviewList" class="space-y-1"></ul>
+                </div>
+                <div id="uploadProgress" class="hidden">
+                    <div class="flex justify-between text-sm text-gray-600 mb-1">
+                        <span>Uploading...</span>
+                        <span id="uploadPercent">0%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div id="uploadBar" class="bg-indigo-600 h-2.5 rounded-full" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="mt-4 flex justify-end space-x-3">
+                    <button id="cancelUploadBtn" class="px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition">
+                        Cancel
+                    </button>
+                    <button id="startUploadBtn" class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition disabled:opacity-50" disabled>
+                        Upload
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
-    
-    <!-- Contact Section -->
-    <section class="contact-section" id="contact">
-        <div class="contact-container">
-            <div class="contact-info">
-                <div class="contact-header">
-                    <h2>CONTACT US</h2>
-                </div>
-                <div class="contact-details">
-                    <div class="contact-detail">
-                        <div class="contact-icon">
-                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                            </svg>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Phone</h4>
-                            <p><a href="tel:+917001196880">+91 7001196880</a></p>
-                            <p><a href="tel:+919007546886">+91 9007546886</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-detail">
-                        <div class="contact-icon">
-                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                <polyline points="22,6 12,13 2,6"></polyline>
-                            </svg>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Email</h4>
-                            <p><a href="mailto:info@kedarnathtravel.com">info@kedarnathtravel.com</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-detail">
-                        <div class="contact-icon">
-                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                <circle cx="12" cy="10" r="3"></circle>
-                            </svg>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Office Address</h4>
-                            <p>123 Spiritual Avenue,<br>Uttarakhand, India</p>
-                        </div>
-                    </div>
-                    <div class="contact-detail">
-                        <div class="contact-icon">
-                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <polyline points="12 6 12 12 16 14"></polyline>
-                            </svg>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Working Hours</h4>
-                            <p>Mon-Sat: 8:00 AM - 8:00 PM</p>
-                            <p>Sunday: 9:00 AM - 5:00 PM</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="social-media">
-                    <a href="#" class="social-link">
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                        </svg>
-                    </a>
-                    <a href="#" class="social-link">
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                        </svg>
-                    </a>
-                    <a href="#" class="social-link">
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-                        </svg>
-                    </a>
-                    <a href="https://wa.me/917001196880" class="social-link">
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="contact-form-container">
-                <div class="contact-form-header">
-                    <h3>SEND US A MESSAGE</h3>
-                </div>
-                <form id="contact-form">
-                    <div class="form-group">
-                        <label for="contact-name">Your Name</label>
-                        <input type="text" id="contact-name" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="contact-email">Email Address</label>
-                        <input type="email" id="contact-email" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="contact-subject">Subject</label>
-                        <input type="text" id="contact-subject" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="contact-message">Your Message</label>
-                        <textarea id="contact-message" class="form-control special-requests" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">
-                        SEND MESSAGE
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-grid">
-                <div class="footer-about">
-                    <a href="#" class="footer-logo">KEDARNATH TRAVEL</a>
-                    <p>Using advanced technology to enhance your spiritual journey to the divine Kedarnath Temple. Our services blend traditional pilgrimage with modern comfort for a transformative experience.</p>
-                    <div class="social-media">
-                        <a href="#" class="social-link">
-                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                            </svg>
-                        </a>
-                        <a href="#" class="social-link">
-                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                            </svg>
-                        </a>
-                        <a href="#" class="social-link">
-                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-                            </svg>
-                        </a>
-                        <a href="https://wa.me/917001196880" class="social-link">
-                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="footer-links-container">
-                    <h3 class="footer-heading">QUICK LINKS</h3>
-                    <ul class="footer-links">
-                        <li class="footer-link">
-                            <a href="#home">
-                                <span class="footer-link-icon">›</span> Home
-                            </a>
-                        </li>
-                        <li class="footer-link">
-                            <a href="#about">
-                                <span class="footer-link-icon">›</span> About Us
-                            </a>
-                        </li>
-                        <li class="footer-link">
-                            <a href="#packages">
-                                <span class="footer-link-icon">›</span> Packages
-                            </a>
-                        </li>
-                        <li class="footer-link">
-                            <a href="#gallery">
-                                <span class="footer-link-icon">›</span> Gallery
-                            </a>
-                        </li>
-                        <li class="footer-link">
-                            <a href="#testimonials">
-                                <span class="footer-link-icon">›</span> Testimonials
-                            </a>
-                        </li>
-                        <li class="footer-link">
-                            <a href="#contact">
-                                <span class="footer-link-icon">›</span> Contact
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-links-container">
-                    <h3 class="footer-heading">TRAVEL INFO</h3>
-                    <ul class="footer-links">
-                        <li class="footer-link">
-                            <a href="#">
-                                <span class="footer-link-icon">›</span> Weather Updates
-                            </a>
-                        </li>
-                        <li class="footer-link">
-                            <a href="#">
-                                <span class="footer-link-icon">›</span> Travel Guidelines
-                            </a>
-                        </li>
-                        <li class="footer-link">
-                            <a href="#">
-                                <span class="footer-link-icon">›</span> FAQs
-                            </a>
-                        </li>
-                        <li class="footer-link">
-                            <a href="#">
-                                <span class="footer-link-icon">›</span> Terms & Conditions
-                            </a>
-                        </li>
-                        <li class="footer-link">
-                            <a href="#">
-                                <span class="footer-link-icon">›</span> Privacy Policy
-                            </a>
-                        </li>
-                        <li class="footer-link">
-                            <a href="#">
-                                <span class="footer-link-icon">›</span> Cancellation Policy
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-newsletter">
-                    <h3 class="footer-heading">NEWSLETTER</h3>
-                    <p class="mb-4 text-snow">Subscribe to receive updates on new packages and spiritual journeys.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Your Email Address" class="newsletter-input" required>
-                        <button type="submit" class="newsletter-btn">
-                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="22" y1="2" x2="11" y2="13"></line>
-                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                            </svg>
-                        </button>
-                    </form>
-                    <p class="mt-4 text-xs text-snow/70">By subscribing, you agree to our Privacy Policy and consent to receive updates from us.</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p class="footer-bottom-text">
-                    © 2023 KEDARNATH TRAVEL — Powered by ASC-Ω | Developed by <a href="#">BITTU CHAUHAN</a> | All Rights Reserved
-                </p>
-            </div>
-        </div>
-    </footer>
-    
-    <!-- JavaScript -->
+
     <script>
-        // DOM Elements
-        const progressBar = document.getElementById('progress-bar');
-        const loadingScreen = document.getElementById('loading-screen');
-        const menuToggle = document.getElementById('menu-toggle');
-        const menuClose = document.getElementById('menu-close');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
+        // File storage (simulated)
+        let files = [];
+        let totalStorageUsed = 0;
         
-        // Admin User Data
-        const adminCredentials = {
-            username: 'admin',
-            password: 'kedarnath2023'
-        };
-        
-        // Special access code for admin panel
-        const adminAccessCode = '7001196880';
-        let calculatorInput = '';
-        
-        // Book Now Buttons
-        const bookNowButtons = document.querySelectorAll('.book-now-btn');
-        bookNowButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                // Scroll to booking section
-                document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+        // Login functionality
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            
+            // Check credentials (username: gayatri, password: bittu)
+            if (username === 'gayatri' && password === 'bittu') {
+                // Hide login modal and show app
+                document.getElementById('loginModal').classList.add('hidden');
+                document.getElementById('app').classList.remove('hidden');
                 
-                // Pre-select the package
-                const packageSelect = document.getElementById('package');
-                const selectedPackage = button.getAttribute('data-package');
-                if (packageSelect) {
-                    Array.from(packageSelect.options).forEach(option => {
-                        if (option.text === selectedPackage) {
-                            packageSelect.value = option.value;
-                        }
-                    });
-                }
-            });
+                // Store login state (in a real app, use proper session management)
+                localStorage.setItem('isLoggedIn', 'true');
+                
+                // Load files from localStorage if available
+                loadFilesFromStorage();
+            } else {
+                alert('Invalid credentials. Please try again.');
+            }
         });
+
+        // Logout functionality
+        document.getElementById('logoutBtn').addEventListener('click', function() {
+            localStorage.removeItem('isLoggedIn');
+            document.getElementById('app').classList.add('hidden');
+            document.getElementById('loginModal').classList.remove('hidden');
+            document.getElementById('username').value = '';
+            document.getElementById('password').value = '';
+        });
+
+        // Check if already logged in (for page refresh)
+        if (localStorage.getItem('isLoggedIn') === 'true') {
+            document.getElementById('loginModal').classList.add('hidden');
+            document.getElementById('app').classList.remove('hidden');
+            loadFilesFromStorage();
+        }
+
+        // File upload functionality
+        const uploadBtn = document.getElementById('uploadBtn');
+        const uploadModal = document.getElementById('uploadModal');
+        const closeUploadModal = document.getElementById('closeUploadModal');
+        const browseFilesBtn = document.getElementById('browseFilesBtn');
+        const fileInput = document.getElementById('fileInput');
+        const startUploadBtn = document.getElementById('startUploadBtn');
+        const cancelUploadBtn = document.getElementById('cancelUploadBtn');
+        const uploadProgress = document.getElementById('uploadProgress');
+        const uploadBar = document.getElementById('uploadBar');
+        const uploadPercent = document.getElementById('uploadPercent');
+        const dropzone = document.getElementById('dropzone');
+        const selectedFilesDiv = document.getElementById('selectedFiles');
+        const filePreviewList = document.getElementById('filePreviewList');
+        const storageUsedSpan = document.getElementById('storageUsed');
+        const sortByNameBtn = document.getElementById('sortByNameBtn');
+        const sortByDateBtn = document.getElementById('sortByDateBtn');
         
-        // Booking API Functions
-        async function fetchBookings() {
-            try {
-                const response = await fetch('/api/bookings');
-                const bookings = await response.json();
-                
-                const bookingsContainer = document.getElementById('bookings-container');
-                
-                if (bookings.length === 0) {
-                    bookingsContainer.innerHTML = '<div class="text-center py-4">No bookings found.</div>';
-                    return;
-                }
-                
-                bookingsContainer.innerHTML = '';
-                
-                bookings.forEach(booking => {
-                    const bookingElement = document.createElement('div');
-                    bookingElement.className = 'booking-card';
-                    
-                    const statusClass = booking.status === 'CONFIRMED' 
-                        ? 'bg-green-500/20 text-green-500' 
-                        : booking.status === 'CANCELED' 
-                        ? 'bg-red-500/20 text-red-500' 
-                        : 'bg-yellow-500/20 text-yellow-500';
-                    
-                    bookingElement.innerHTML = `
-                        <div class="flex justify-between">
-                            <h5 class="font-bold">${booking.name}</h5>
-                            <div class="flex items-center space-x-2">
-                                <span class="text-xs ${statusClass} px-2 py-1 rounded">${booking.status}</span>
-                                <div class="booking-actions">
-                                    <select class="status-select bg-cosmic text-snow border border-sacred/30 text-xs p-1 rounded" data-id="${booking.id}">
-                                        <option value="PENDING" ${booking.status === 'PENDING' ? 'selected' : ''}>PENDING</option>
-                                        <option value="CONFIRMED" ${booking.status === 'CONFIRMED' ? 'selected' : ''}>CONFIRMED</option>
-                                        <option value="CANCELED" ${booking.status === 'CANCELED' ? 'selected' : ''}>CANCELED</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="text-sm opacity-70">${booking.package} | ${booking.persons} Persons | ${new Date(booking.date).toLocaleDateString()}</p>
-                        <div class="flex justify-between mt-2 text-xs">
-                            <span>Booking ID: ${booking.booking_id}</span>
-                            <span>₹${booking.amount.toLocaleString()}</span>
-                        </div>
-                    `;
-                    
-                    bookingsContainer.appendChild(bookingElement);
-                });
-                
-                // Add event listeners to status selects
-                document.querySelectorAll('.status-select').forEach(select => {
-                    select.addEventListener('change', async (e) => {
-                        const bookingId = e.target.dataset.id;
-                        const newStatus = e.target.value;
-                        
-                        try {
-                            const response = await fetch(`/api/bookings/${bookingId}`, {
-                                method: 'PUT',
-                                headers: {
-                                    'Content-Type': 'application/json',
-                                },
-                                body: JSON.stringify({ status: newStatus }),
-                            });
-                            
-                            if (response.ok) {
-                                fetchBookings(); // Refresh bookings
-                            } else {
-                                alert('Failed to update booking status.');
-                            }
-                        } catch (error) {
-                            console.error('Error updating booking status:', error);
-                            alert('An error occurred while updating the booking status.');
-                        }
-                    });
-                });
-            } catch (error) {
-                console.error('Error fetching bookings:', error);
-                document.getElementById('bookings-container').innerHTML = '<div class="text-center py-4 text-red-500">Error loading bookings.</div>';
+        let selectedFiles = [];
+
+        // Open upload modal
+        uploadBtn.addEventListener('click', () => {
+            uploadModal.classList.remove('hidden');
+        });
+
+        // Close upload modal
+        closeUploadModal.addEventListener('click', () => {
+            uploadModal.classList.add('hidden');
+            resetUploadForm();
+        });
+
+        // Browse files
+        browseFilesBtn.addEventListener('click', () => {
+            fileInput.click();
+        });
+
+        // Handle file selection
+        fileInput.addEventListener('change', (e) => {
+            handleFiles(e.target.files);
+        });
+
+        // Drag and drop functionality
+        ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+            dropzone.addEventListener(eventName, preventDefaults, false);
+        });
+
+        function preventDefaults(e) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+
+        ['dragenter', 'dragover'].forEach(eventName => {
+            dropzone.addEventListener(eventName, highlight, false);
+        });
+
+        ['dragleave', 'drop'].forEach(eventName => {
+            dropzone.addEventListener(eventName, unhighlight, false);
+        });
+
+        function highlight() {
+            dropzone.classList.add('active');
+        }
+
+        function unhighlight() {
+            dropzone.classList.remove('active');
+        }
+
+        dropzone.addEventListener('drop', (e) => {
+            const dt = e.dataTransfer;
+            const files = dt.files;
+            handleFiles(files);
+        });
+
+        function handleFiles(newFiles) {
+            selectedFiles = Array.from(newFiles);
+            if (selectedFiles.length > 0) {
+                startUploadBtn.disabled = false;
+                updateFilePreview();
+                selectedFilesDiv.classList.remove('hidden');
+            } else {
+                startUploadBtn.disabled = true;
+                selectedFilesDiv.classList.add('hidden');
             }
         }
 
-        // Booking Form Submission
-        const bookingForm = document.getElementById('booking-form');
-        if (bookingForm) {
-            bookingForm.addEventListener('submit', async (e) => {
-                e.preventDefault();
+        function updateFilePreview() {
+            filePreviewList.innerHTML = '';
+            selectedFiles.forEach((file, index) => {
+                const li = document.createElement('li');
+                li.className = 'flex items-center justify-between text-sm';
                 
-                const bookingData = {
-                    name: document.getElementById('name').value,
-                    email: document.getElementById('email').value,
-                    phone: document.getElementById('phone').value,
-                    package: document.getElementById('package').value,
-                    date: document.getElementById('date').value,
-                    persons: parseInt(document.getElementById('persons').value),
-                };
+                const fileInfo = document.createElement('div');
+                fileInfo.className = 'flex items-center truncate';
                 
-                try {
-                    const response = await fetch('/api/bookings', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                        },
-                        body: JSON.stringify(bookingData),
-                    });
-                    
-                    const result = await response.json();
-                    
-                    if (response.ok) {
-                        alert(`Booking successful! Your booking ID is: ${result.booking_id}`);
-                        bookingForm.reset();
-                    } else {
-                        alert('Failed to create booking: ' + result.message);
+                const icon = document.createElement('i');
+                icon.className = 'fas mr-2 ' + getFileIconClass(file.name);
+                icon.style.color = getFileIconColor(file.name);
+                
+                const fileName = document.createElement('span');
+                fileName.className = 'truncate';
+                fileName.textContent = file.name;
+                
+                const fileSize = document.createElement('span');
+                fileSize.className = 'text-gray-500 ml-2';
+                fileSize.textContent = formatFileSize(file.size);
+                
+                fileInfo.appendChild(icon);
+                fileInfo.appendChild(fileName);
+                fileInfo.appendChild(fileSize);
+                
+                const removeBtn = document.createElement('button');
+                removeBtn.className = 'text-red-500 hover:text-red-700 ml-2';
+                removeBtn.innerHTML = '<i class="fas fa-times"></i>';
+                removeBtn.addEventListener('click', () => {
+                    selectedFiles.splice(index, 1);
+                    if (selectedFiles.length === 0) {
+                        startUploadBtn.disabled = true;
+                        selectedFilesDiv.classList.add('hidden');
                     }
-                } catch (error) {
-                    console.error('Error creating booking:', error);
-                    alert('An error occurred while creating your booking. Please try again later.');
-                }
-            });
-        }
-        
-        // Loading Screen
-        document.addEventListener('DOMContentLoaded', () => {
-            // Hide loading screen immediately
-            const loadingScreen = document.getElementById('loading-screen');
-            if (loadingScreen) {
-                loadingScreen.style.opacity = '0';
-                setTimeout(() => {
-                    loadingScreen.style.display = 'none';
-                }, 500);
-            }
-        });
-        
-        // Progress Bar
-        window.addEventListener('scroll', () => {
-            const scrollTop = document.documentElement.scrollTop;
-            const scrollHeight = document.documentElement.scrollHeight;
-            const clientHeight = document.documentElement.clientHeight;
-            const scrollPercentage = (scrollTop / (scrollHeight - clientHeight)) * 100;
-            progressBar.style.width = scrollPercentage + '%';
-        });
-        
-        // Mobile Menu
-        if (menuToggle) {
-            menuToggle.addEventListener('click', () => {
-                mobileMenu.classList.add('active');
-            });
-        }
-        
-        if (menuClose) {
-            menuClose.addEventListener('click', () => {
-                mobileMenu.classList.remove('active');
-            });
-        }
-        
-        // Close mobile menu when clicking on a link
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.remove('active');
-            });
-        });
-        
-        // Virtual Tour
-        const virtualTourBtn = document.getElementById('virtual-tour-btn');
-        const virtualTourModal = document.getElementById('virtual-tour-modal');
-        const tourClose = document.getElementById('tour-close');
-        const tourIframe = document.getElementById('tour-iframe');
-        
-        if (virtualTourBtn) {
-            virtualTourBtn.addEventListener('click', () => {
-                virtualTourModal.style.display = 'block';
-                tourIframe.src = 'https://www.google.com/maps/embed?pb=!4v1682343748911!6m8!1m7!1sCAoSLEFGMVFpcE5mQk1iOGxLOEJSTUY4cDM0YTd3ZDFRenVtZEQ4VFJLZ3lETG1H!2m2!1d30.7352935!2d79.0668843!3f328!4f0!5f0.7820865974627469';
-            });
-        }
-        
-        if (tourClose) {
-            tourClose.addEventListener('click', () => {
-                virtualTourModal.style.display = 'none';
-                tourIframe.src = 'about:blank'; // Stop the iframe content
-            });
-        }
-        
-        // Contact Form Submission
-        const contactForm = document.getElementById('contact-form');
-        if (contactForm) {
-            contactForm.addEventListener('submit', async (e) => {
-                e.preventDefault();
+                    updateFilePreview();
+                });
                 
-                const contactData = {
-                    name: document.getElementById('contact-name').value,
-                    email: document.getElementById('contact-email').value,
-                    subject: document.getElementById('contact-subject').value,
-                    message: document.getElementById('contact-message').value,
-                };
-                
-                try {
-                    const response = await fetch('/api/contact', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                        },
-                        body: JSON.stringify(contactData),
-                    });
+                li.appendChild(fileInfo);
+                li.appendChild(removeBtn);
+                filePreviewList.appendChild(li);
+            });
+        }
+
+        // Start upload
+        startUploadBtn.addEventListener('click', () => {
+            if (selectedFiles.length === 0) return;
+            
+            // Show progress bar
+            uploadProgress.classList.remove('hidden');
+            startUploadBtn.disabled = true;
+            cancelUploadBtn.disabled = true;
+            
+            // Simulate upload progress
+            let progress = 0;
+            const interval = setInterval(() => {
+                progress += Math.random() * 10;
+                if (progress >= 100) {
+                    progress = 100;
+                    clearInterval(interval);
                     
-                    if (response.ok) {
-                        alert('Your message has been sent successfully. We will get back to you soon!');
-                        contactForm.reset();
-                    } else {
-                        alert('Failed to send message. Please try again later.');
-                    }
-                } catch (error) {
-                    console.error('Error sending message:', error);
-                    alert('An error occurred while sending your message. Please try again later.');
+                    // Upload complete
+                    setTimeout(() => {
+                        uploadModal.classList.add('hidden');
+                        resetUploadForm();
+                        
+                        // Add files to storage
+                        selectedFiles.forEach(file => {
+                            addFileToStorage(file);
+                        });
+                        
+                        // Refresh file list
+                        renderFileList();
+                    }, 500);
                 }
-            });
-        }
-        
-        // Newsletter Subscription
-        const newsletterForm = document.querySelector('.newsletter-form');
-        if (newsletterForm) {
-            newsletterForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                const emailInput = newsletterForm.querySelector('.newsletter-input');
-                alert(`Thank you for subscribing to our newsletter with email: ${emailInput.value}`);
-                emailInput.value = '';
-            });
-        }
-        
-        // Particle Effect
-        function createParticles() {
-            const particles = document.getElementById('particles');
-            if (!particles) return;
-            
-            const particleCount = 50;
-            
-            for (let i = 0; i < particleCount; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'particle';
                 
-                // Random position
-                const posX = Math.random() * 100;
-                const posY = Math.random() * 100;
-                
-                // Random size
-                const size = Math.random() * 5 + 2;
-                
-                // Random opacity
-                const opacity = Math.random() * 0.5 + 0.1;
-                
-                // Random animation delay
-                const delay = Math.random() * 5;
-                
-                particle.style.left = `${posX}%`;
-                particle.style.top = `${posY}%`;
-                particle.style.width = `${size}px`;
-                particle.style.height = `${size}px`;
-                particle.style.opacity = opacity;
-                particle.style.animationDelay = `${delay}s`;
-                
-                particles.appendChild(particle);
-            }
-        }
-        
-        // Create particles on load
-        window.addEventListener('load', createParticles);
-        
-        // Calculator Functionality
-        const calculatorScreen = document.getElementById('calc-screen');
-        const calculatorKeys = document.querySelectorAll('.calculator-key');
-        
-        let displayValue = '0';
-        let firstOperand = null;
-        let waitingForSecondOperand = false;
-        let operator = null;
-        
-        function updateDisplay() {
-            calculatorScreen.value = displayValue;
-        }
-        
-        calculatorKeys.forEach(key => {
-            key.addEventListener('click', () => {
-                if (key.classList.contains('operator')) {
-                    handleOperator(key.textContent);
-                } else if (key.classList.contains('equal')) {
-                    handleEqual();
-                } else if (key.id === 'admin-login-btn') {
-                    // Admin login button clicked
-                    document.querySelector('.admin-panel').classList.remove('hidden');
-                    document.querySelector('.admin-login').style.display = 'block';
-                    document.querySelector('.admin-dashboard').style.display = 'none';
-                } else {
-                    handleNumber(key.textContent);
-                }
-                updateDisplay();
-            });
+                uploadBar.style.width = `${progress}%`;
+                uploadPercent.textContent = `${Math.round(progress)}%`;
+            }, 200);
         });
-        
-        function handleNumber(num) {
-            if (waitingForSecondOperand) {
-                displayValue = num;
-                waitingForSecondOperand = false;
-            } else {
-                displayValue = displayValue === '0' ? num : displayValue + num;
-            }
+
+        // Cancel upload
+        cancelUploadBtn.addEventListener('click', () => {
+            uploadModal.classList.add('hidden');
+            resetUploadForm();
+        });
+
+        // Reset upload form
+        function resetUploadForm() {
+            selectedFiles = [];
+            fileInput.value = '';
+            uploadProgress.classList.add('hidden');
+            uploadBar.style.width = '0%';
+            uploadPercent.textContent = '0%';
+            startUploadBtn.disabled = true;
+            cancelUploadBtn.disabled = false;
+            selectedFilesDiv.classList.add('hidden');
+            filePreviewList.innerHTML = '';
+        }
+
+        // Add file to storage
+        function addFileToStorage(file) {
+            const fileObj = {
+                id: Date.now().toString(),
+                name: file.name,
+                size: file.size,
+                type: file.type,
+                date: new Date().toISOString(),
+                url: URL.createObjectURL(file) // Create object URL for download
+            };
             
-            // Update the calculator input for admin access code check
-            calculatorInput = displayValue;
+            files.push(fileObj);
+            totalStorageUsed += file.size;
+            updateStorageDisplay();
             
-            // Check for special access code
-            if (displayValue === adminAccessCode) {
-                document.getElementById('admin-login-btn').style.display = 'block';
-                alert('ACCESS GRANTED: Admin panel unlocked.');
+            // Save to localStorage (simulated)
+            saveFilesToStorage();
+        }
+
+        // Update storage display
+        function updateStorageDisplay() {
+            const storageInMB = (totalStorageUsed / (1024 * 1024)).toFixed(2);
+            storageUsedSpan.textContent = `${storageInMB} MB`;
+        }
+
+        // Save files to localStorage
+        function saveFilesToStorage() {
+            localStorage.setItem('gayatriFiles', JSON.stringify(files));
+            localStorage.setItem('gayatriStorageUsed', totalStorageUsed.toString());
+        }
+
+        // Load files from localStorage
+        function loadFilesFromStorage() {
+            const savedFiles = localStorage.getItem('gayatriFiles');
+            const savedStorage = localStorage.getItem('gayatriStorageUsed');
+            
+            if (savedFiles) {
+                files = JSON.parse(savedFiles);
+                totalStorageUsed = savedStorage ? parseInt(savedStorage) : 0;
+                updateStorageDisplay();
+                renderFileList();
             }
         }
-        
-        function handleOperator(nextOperator) {
-            const inputValue = parseFloat(displayValue);
+
+        // Render file list
+        function renderFileList() {
+            const fileList = document.getElementById('fileList');
+            fileList.innerHTML = '';
             
-            if (firstOperand === null) {
-                firstOperand = inputValue;
-            } else if (operator) {
-                const result = calculate(firstOperand, inputValue, operator);
-                displayValue = String(result);
-                firstOperand = result;
-            }
-            
-            waitingForSecondOperand = true;
-            operator = nextOperator;
-        }
-        
-        function handleEqual() {
-            if (operator === null) {
-                // Check for special access code even if no operation was performed
-                if (displayValue === adminAccessCode) {
-                    document.getElementById('admin-login-btn').style.display = 'block';
-                    alert('ACCESS GRANTED: Admin panel unlocked.');
-                }
+            if (files.length === 0) {
+                fileList.innerHTML = `
+                    <div class="p-8 text-center text-gray-500">
+                        <i class="fas fa-folder-open text-4xl mb-2"></i>
+                        <p>No files uploaded yet</p>
+                    </div>
+                `;
                 return;
             }
             
-            const inputValue = parseFloat(displayValue);
-            const result = calculate(firstOperand, inputValue, operator);
+            files.forEach(file => {
+                const fileItem = document.createElement('div');
+                fileItem.className = 'file-item p-4 hover:bg-gray-50 transition cursor-pointer';
+                fileItem.innerHTML = `
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-4">
+                            <i class="fas ${getFileIconClass(file.name)} text-3xl" style="color: ${getFileIconColor(file.name)}"></i>
+                            <div>
+                                <p class="font-medium text-gray-800">${file.name}</p>
+                                <p class="text-sm text-gray-500">${formatFileSize(file.size)} • ${formatDate(file.date)}</p>
+                            </div>
+                        </div>
+                        <div class="file-actions opacity-0 flex space-x-2">
+                            <button class="download-btn p-2 text-gray-500 hover:text-indigo-600 rounded-full hover:bg-indigo-50 transition" data-id="${file.id}">
+                                <i class="fas fa-download"></i>
+                            </button>
+                            <button class="delete-btn p-2 text-gray-500 hover:text-red-600 rounded-full hover:bg-red-50 transition" data-id="${file.id}">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+                `;
+                fileList.appendChild(fileItem);
+            });
             
-            displayValue = String(result);
-            firstOperand = result;
-            operator = null;
-            waitingForSecondOperand = true;
+            // Add event listeners for download and delete
+            document.querySelectorAll('.download-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const fileId = btn.getAttribute('data-id');
+                    downloadFile(fileId);
+                });
+            });
             
-            // Check for admin access code
-            if (displayValue === adminAccessCode) {
-                document.getElementById('admin-login-btn').style.display = 'block';
-                alert('ACCESS GRANTED: Admin panel unlocked.');
+            document.querySelectorAll('.delete-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const fileId = btn.getAttribute('data-id');
+                    deleteFile(fileId);
+                });
+            });
+        }
+
+        // Download file
+        function downloadFile(fileId) {
+            const file = files.find(f => f.id === fileId);
+            if (!file) return;
+            
+            const a = document.createElement('a');
+            a.href = file.url;
+            a.download = file.name;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+
+        // Delete file
+        function deleteFile(fileId) {
+            if (confirm('Are you sure you want to delete this file?')) {
+                const fileIndex = files.findIndex(f => f.id === fileId);
+                if (fileIndex !== -1) {
+                    // Revoke object URL
+                    URL.revokeObjectURL(files[fileIndex].url);
+                    
+                    // Update storage used
+                    totalStorageUsed -= files[fileIndex].size;
+                    updateStorageDisplay();
+                    
+                    // Remove file
+                    files.splice(fileIndex, 1);
+                    
+                    // Save to localStorage
+                    saveFilesToStorage();
+                    
+                    // Refresh file list
+                    renderFileList();
+                }
             }
         }
-        
-        function calculate(firstOperand, secondOperand, operator) {
-            switch (operator) {
-                case '+':
-                    return firstOperand + secondOperand;
-                case '-':
-                    return firstOperand - secondOperand;
-                case '×':
-                    return firstOperand * secondOperand;
-                case '÷':
-                    return firstOperand / secondOperand;
-                default:
-                    return secondOperand;
-            }
+
+        // Helper functions
+        function getFileIconClass(filename) {
+            const ext = filename.split('.').pop().toLowerCase();
+            if (['pdf'].includes(ext)) return 'fa-file-pdf';
+            if (['jpg', 'jpeg', 'png', 'gif', 'svg', 'webp'].includes(ext)) return 'fa-file-image';
+            if (['doc', 'docx'].includes(ext)) return 'fa-file-word';
+            if (['xls', 'xlsx'].includes(ext)) return 'fa-file-excel';
+            if (['ppt', 'pptx'].includes(ext)) return 'fa-file-powerpoint';
+            if (['zip', 'rar', '7z', 'tar', 'gz'].includes(ext)) return 'fa-file-archive';
+            if (['mp3', 'wav', 'ogg'].includes(ext)) return 'fa-file-audio';
+            if (['mp4', 'avi', 'mov', 'mkv'].includes(ext)) return 'fa-file-video';
+            return 'fa-file';
         }
-        
-        // Update display initially
-        updateDisplay();
-        
-        // Make sure admin login button is hidden initially
-        const adminLoginBtn = document.getElementById('admin-login-btn');
-        if (adminLoginBtn) {
-            adminLoginBtn.style.display = 'none';
+
+        function getFileIconColor(filename) {
+            const ext = filename.split('.').pop().toLowerCase();
+            if (['pdf'].includes(ext)) return '#ef4444';
+            if (['jpg', 'jpeg', 'png', 'gif', 'svg', 'webp'].includes(ext)) return '#3b82f6';
+            if (['doc', 'docx'].includes(ext)) return '#2563eb';
+            if (['xls', 'xlsx'].includes(ext)) return '#16a34a';
+            if (['ppt', 'pptx'].includes(ext)) return '#e11d48';
+            if (['zip', 'rar', '7z', 'tar', 'gz'].includes(ext)) return '#f97316';
+            return '#6b7280';
         }
-        
-        // Admin Panel Functionality
-        const adminPanel = document.querySelector('.admin-panel');
-        const adminLogin = document.querySelector('.admin-login');
-        const adminDashboard = document.querySelector('.admin-dashboard');
-        const adminClose = document.querySelector('.admin-close');
-        const adminLogout = document.querySelector('.admin-logout');
-        const adminLoginSubmit = document.getElementById('admin-login-submit');
-        const adminUsername = document.getElementById('admin-username');
-        const adminPassword = document.getElementById('admin-password');
-        
-        // Logo Click Count for Admin Access
-        const logo = document.querySelector('.logo');
-        let logoClickCount = 0;
-        
-        if (logo) {
-            logo.addEventListener('click', () => {
-                logoClickCount++;
-                if (logoClickCount >= 3) {
-                    document.querySelector('.calculator-container').scrollIntoView({ behavior: 'smooth' });
-                    setTimeout(() => {
-                        alert('Admin Calculator Access: Enter the special code for admin login.');
-                    }, 1000);
-                    logoClickCount = 0;
-                }
-            });
+
+        function formatFileSize(bytes) {
+            if (bytes < 1024) return bytes + ' bytes';
+            else if (bytes < 1048576) return (bytes / 1024).toFixed(1) + ' KB';
+            else if (bytes < 1073741824) return (bytes / 1048576).toFixed(1) + ' MB';
+            else return (bytes / 1073741824).toFixed(1) + ' GB';
         }
-        
-        if (adminClose) {
-            adminClose.addEventListener('click', () => {
-                adminPanel.classList.add('hidden');
-            });
+
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            return date.toLocaleDateString() + ' ' + date.toLocaleTimeString();
         }
-        
-        if (adminLogout) {
-            adminLogout.addEventListener('click', () => {
-                adminDashboard.style.display = 'none';
-                adminLogin.style.display = 'block';
-                adminUsername.value = '';
-                adminPassword.value = '';
-            });
-        }
-        
-        if (adminLoginSubmit) {
-            adminLoginSubmit.addEventListener('click', () => {
-                if (adminUsername.value === adminCredentials.username && adminPassword.value === adminCredentials.password) {
-                    adminLogin.style.display = 'none';
-                    adminDashboard.style.display = 'block';
-                    fetchBookings();
-                } else {
-                    alert('Invalid credentials. Please try again.');
-                }
-            });
-        }
+
+        // Sorting functionality
+        sortByNameBtn.addEventListener('click', () => {
+            files.sort((a, b) => a.name.localeCompare(b.name));
+            renderFileList();
+        });
+
+        sortByDateBtn.addEventListener('click', () => {
+            files.sort((a, b) => new Date(b.date) - new Date(a.date));
+            renderFileList();
+        });
     </script>
 </body>
 </html>
